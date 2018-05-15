@@ -80,6 +80,7 @@ setup(name='pypylon',
       cmdclass={'build_ext': build_ext},
       ext_modules=pypylon_extensions,
       packages=find_packages(exclude=['contrib', 'docs', 'tests', 'examples', 'cython']),
+      install_requires=['Cython', 'numpy', 'tqdm'],
 
       # for the classifiers review see:
       # https://pypi.python.org/pypi?%3Aaction=list_classifiers
